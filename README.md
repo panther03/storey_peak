@@ -6,6 +6,12 @@ documenting microsoft storey peak board experiments
 
 
 
+## repos credit
+
+[pp-sp-reference-design](https://github.com/j-marjanovic/pp-sp-reference-design)
+
+[jtag_uart_example](https://github.com/tomverbeure/jtag_uart_example/tree/master)
+
 ## quick reference
 
 (duplicated elsewhere just keeping for reference)
