@@ -1,10 +1,20 @@
 # Microsoft Storey Peak experiments
 
-documenting microsoft storey peak board experiments
+documenting microsoft storey peak fpga board
 
 ## resources:
 
-
+- https://github.com/j-marjanovic/jtag-quartus-ft232h#initialization
+- https://github.com/racerxdl/pcieledblink/tree/main
+- https://github.com/thinkoco/microsoft_fpga
+- https://github.com/tow3rs/catapult-v3-smartnic-re
+- https://j-marjanovic.io/stratix-v-accelerator-card-from-ebay-part-7.html
+- https://github.com/j-marjanovic/pp-sp-reference-design/tree/master
+- https://github.com/ruurdk/jtag-quartus-ft323h-windows
+- https://www.devops.lol/azure-fpga/
+- https://github.com/carlosedp/chisel-fpga-pinfinder/tree/main
+- https://github.com/wirebond/catapult_v2_pikes_peak
+- https://github.com/ruurdk/storey-peak
 
 ## repos credit
 
