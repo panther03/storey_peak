@@ -1,0 +1,6 @@
+simulation/
+output_files/*
+incremental_db/
+db/
+*.qws
+!output_files/mini_cpu.sof

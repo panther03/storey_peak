@@ -1,0 +1,142 @@
+// fpga is reloaded here
+2024-07-11T10:09:57.921999-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.974490-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+2024-07-11T10:09:57.974506-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00000001/00002000
+2024-07-11T10:09:57.974507-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 0] RxErr                  (First)
+2024-07-11T10:09:57.974508-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979310-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979323-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979325-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979326-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979328-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979329-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979333-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979338-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979339-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979341-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979343-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979344-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979346-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979347-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979349-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979350-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979351-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979366-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979367-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979369-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979370-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979371-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979372-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979373-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979389-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979391-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979392-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979393-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979395-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979396-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979397-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979398-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979399-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979400-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979401-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979403-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979404-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979405-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979406-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979407-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979427-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979429-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979430-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979432-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979433-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979435-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979449-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979460-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979462-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979463-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979464-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979467-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979469-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979470-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979471-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979473-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979474-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979476-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979486-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979487-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979489-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979490-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979491-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979503-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979504-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979514-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979516-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979517-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979519-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979520-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979525-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979526-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979528-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979529-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979530-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979532-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979533-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979534-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Correctable error message received from 0000:00:02.0
+2024-07-11T10:09:57.979545-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: found no error details for 0000:00:02.0
+2024-07-11T10:09:57.979546-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:02.0
+2024-07-11T10:09:57.979547-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:09:57.979548-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:09:57.979559-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:09:57.979601-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:09:57.979606-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:09:57.979607-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
+2024-07-11T10:09:57.979608-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:02.0
+2024-07-11T10:09:57.979610-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:09:57.979612-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:09:57.979613-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:09:57.979614-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:09:57.979615-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:09:57.979617-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
+2024-07-11T10:09:57.979618-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:02.0
+2024-07-11T10:09:57.979619-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:09:57.979621-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:09:57.979622-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:09:57.979624-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:09:57.979625-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:09:57.979626-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
+2024-07-11T10:09:57.979627-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:02.0
+2024-07-11T10:09:57.979639-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:09:57.979640-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:09:57.979642-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:09:57.979643-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:09:57.979644-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:09:57.979645-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
+2024-07-11T10:09:57.979659-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Multiple Uncorrectable (Fatal) error message received from 0000:00:02.0
+2024-07-11T10:09:57.979661-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:09:57.979662-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:09:57.979663-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:09:57.979674-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:09:57.979676-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:09:59.007301-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: broken device, retraining non-functional downstream link at 2.5GT/s
+2024-07-11T10:10:00.009290-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: retraining failed
+2024-07-11T10:10:01.183293-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: broken device, retraining non-functional downstream link at 2.5GT/s
+2024-07-11T10:10:02.183290-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: retraining failed
+2024-07-11T10:10:02.183307-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 1023ms after bus reset; waiting
+2024-07-11T10:10:03.231295-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 2047ms after bus reset; waiting
+2024-07-11T10:10:05.343235-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 4095ms after bus reset; waiting
+2024-07-11T10:10:09.759268-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 8191ms after bus reset; waiting
+2024-07-11T10:10:18.463273-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 16383ms after bus reset; waiting
+2024-07-11T10:10:35.359271-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 32767ms after bus reset; waiting
+2024-07-11T10:11:09.663257-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: not ready 65535ms after bus reset; giving up
+2024-07-11T10:11:09.663291-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Root Port link has been reset (-25)
+// lspci starts to respond now
+2024-07-11T10:11:09.663297-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: subordinate device reset failed
+2024-07-11T10:11:09.663299-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
+2024-07-11T10:13:40.947281-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Uncorrectable (Fatal) error message received from 0000:00:02.0
+2024-07-11T10:13:40.947321-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: PCIe Bus Error: severity=Uncorrectable (Fatal), type=Transaction Layer, (Requester ID)
+2024-07-11T10:13:40.947324-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:   device [8086:2f04] error status/mask=00004020/00000000
+2024-07-11T10:13:40.947336-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [ 5] SDES                  
+2024-07-11T10:13:40.947338-05:00 hdlbox3 kernel: pcieport 0000:00:02.0:    [14] CmpltTO                (First)
+2024-07-11T10:13:40.947341-05:00 hdlbox3 kernel: uio_pci_generic 0000:02:00.0: AER: can't recover (no error_detected callback)
+2024-07-11T10:13:41.095269-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: Root Port link has been reset (0)
+2024-07-11T10:13:41.095296-05:00 hdlbox3 kernel: pcieport 0000:00:02.0: AER: device recovery failed
