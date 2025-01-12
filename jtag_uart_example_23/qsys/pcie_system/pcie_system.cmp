@@ -1,0 +1,51 @@
+	component pcie_system is
+		port (
+			clk_125_clk                   : in  std_logic                     := 'X';             -- clk
+			pcie1_hip_ctrl_test_in        : in  std_logic_vector(31 downto 0) := (others => 'X'); -- test_in
+			pcie1_hip_ctrl_simu_mode_pipe : in  std_logic                     := 'X';             -- simu_mode_pipe
+			pcie1_hip_serial_rx_in0       : in  std_logic                     := 'X';             -- rx_in0
+			pcie1_hip_serial_rx_in1       : in  std_logic                     := 'X';             -- rx_in1
+			pcie1_hip_serial_rx_in2       : in  std_logic                     := 'X';             -- rx_in2
+			pcie1_hip_serial_rx_in3       : in  std_logic                     := 'X';             -- rx_in3
+			pcie1_hip_serial_rx_in4       : in  std_logic                     := 'X';             -- rx_in4
+			pcie1_hip_serial_rx_in5       : in  std_logic                     := 'X';             -- rx_in5
+			pcie1_hip_serial_rx_in6       : in  std_logic                     := 'X';             -- rx_in6
+			pcie1_hip_serial_rx_in7       : in  std_logic                     := 'X';             -- rx_in7
+			pcie1_hip_serial_tx_out0      : out std_logic;                                        -- tx_out0
+			pcie1_hip_serial_tx_out1      : out std_logic;                                        -- tx_out1
+			pcie1_hip_serial_tx_out2      : out std_logic;                                        -- tx_out2
+			pcie1_hip_serial_tx_out3      : out std_logic;                                        -- tx_out3
+			pcie1_hip_serial_tx_out4      : out std_logic;                                        -- tx_out4
+			pcie1_hip_serial_tx_out5      : out std_logic;                                        -- tx_out5
+			pcie1_hip_serial_tx_out6      : out std_logic;                                        -- tx_out6
+			pcie1_hip_serial_tx_out7      : out std_logic;                                        -- tx_out7
+			pcie1_npor_npor               : in  std_logic                     := 'X';             -- npor
+			pcie1_npor_pin_perst          : in  std_logic                     := 'X';             -- pin_perst
+			pcie1_refclk_clk              : in  std_logic                     := 'X';             -- clk
+			pcie2_hip_ctrl_test_in        : in  std_logic_vector(31 downto 0) := (others => 'X'); -- test_in
+			pcie2_hip_ctrl_simu_mode_pipe : in  std_logic                     := 'X';             -- simu_mode_pipe
+			pcie2_hip_serial_rx_in0       : in  std_logic                     := 'X';             -- rx_in0
+			pcie2_hip_serial_rx_in1       : in  std_logic                     := 'X';             -- rx_in1
+			pcie2_hip_serial_rx_in2       : in  std_logic                     := 'X';             -- rx_in2
+			pcie2_hip_serial_rx_in3       : in  std_logic                     := 'X';             -- rx_in3
+			pcie2_hip_serial_rx_in4       : in  std_logic                     := 'X';             -- rx_in4
+			pcie2_hip_serial_rx_in5       : in  std_logic                     := 'X';             -- rx_in5
+			pcie2_hip_serial_rx_in6       : in  std_logic                     := 'X';             -- rx_in6
+			pcie2_hip_serial_rx_in7       : in  std_logic                     := 'X';             -- rx_in7
+			pcie2_hip_serial_tx_out0      : out std_logic;                                        -- tx_out0
+			pcie2_hip_serial_tx_out1      : out std_logic;                                        -- tx_out1
+			pcie2_hip_serial_tx_out2      : out std_logic;                                        -- tx_out2
+			pcie2_hip_serial_tx_out3      : out std_logic;                                        -- tx_out3
+			pcie2_hip_serial_tx_out4      : out std_logic;                                        -- tx_out4
+			pcie2_hip_serial_tx_out5      : out std_logic;                                        -- tx_out5
+			pcie2_hip_serial_tx_out6      : out std_logic;                                        -- tx_out6
+			pcie2_hip_serial_tx_out7      : out std_logic;                                        -- tx_out7
+			pcie2_npor_npor               : in  std_logic                     := 'X';             -- npor
+			pcie2_npor_pin_perst          : in  std_logic                     := 'X';             -- pin_perst
+			pcie2_refclk_clk              : in  std_logic                     := 'X';             -- clk
+			rst_125_reset_n               : in  std_logic                     := 'X';             -- reset_n
+			uart_conduit_rxd              : in  std_logic                     := 'X';             -- rxd
+			uart_conduit_txd              : out std_logic                                         -- txd
+		);
+	end component pcie_system;
+

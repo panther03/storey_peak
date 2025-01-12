@@ -1,0 +1,88 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system.qsys --block-symbol-file --output-directory=/home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system --family="Stratix V" --part=5SGSMD5K1F40C1
+Progress: Loading qsys/vroom_system.qsys
+Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module RAM
+Progress: Adding ROM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module ROM
+Progress: Adding VROOM_0 [VROOM 1.0]
+Progress: Parameterizing module VROOM_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding interrupt_connections_1 [interrupt_connections 1.0]
+Progress: Parameterizing module interrupt_connections_1
+Progress: Adding pll_0 [altera_pll 23.1]
+Progress: Parameterizing module pll_0
+Progress: Adding reset_controller_0 [altera_reset_controller 23.1]
+Progress: Parameterizing module reset_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: vroom_system.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: vroom_system.pll_0: Able to implement PLL with user settings
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system.qsys --synthesis=VERILOG --output-directory=/home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system/synthesis --family="Stratix V" --part=5SGSMD5K1F40C1
+Progress: Loading qsys/vroom_system.qsys
+Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module RAM
+Progress: Adding ROM [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module ROM
+Progress: Adding VROOM_0 [VROOM 1.0]
+Progress: Parameterizing module VROOM_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding interrupt_connections_1 [interrupt_connections 1.0]
+Progress: Parameterizing module interrupt_connections_1
+Progress: Adding pll_0 [altera_pll 23.1]
+Progress: Parameterizing module pll_0
+Progress: Adding reset_controller_0 [altera_reset_controller 23.1]
+Progress: Parameterizing module reset_controller_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: vroom_system.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: vroom_system.pll_0: Able to implement PLL with user settings
+Info: vroom_system: Generating vroom_system "vroom_system" for QUARTUS_SYNTH
+Info: RAM: Starting RTL generation for module 'vroom_system_RAM'
+Info: RAM:   Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=vroom_system_RAM --dir=/tmp/alt0099_2836935463308551927.dir/0002_RAM_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0099_2836935463308551927.dir/0002_RAM_gen//vroom_system_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: RAM: Done RTL generation for module 'vroom_system_RAM'
+Info: RAM: "vroom_system" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: ROM: Starting RTL generation for module 'vroom_system_ROM'
+Info: ROM:   Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=vroom_system_ROM --dir=/tmp/alt0099_2836935463308551927.dir/0003_ROM_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0099_2836935463308551927.dir/0003_ROM_gen//vroom_system_ROM_component_configuration.pl  --do_build_sim=0  ]
+Info: ROM: Done RTL generation for module 'vroom_system_ROM'
+Info: ROM: "vroom_system" instantiated altera_avalon_onchip_memory2 "ROM"
+Info: VROOM_0: "vroom_system" instantiated VROOM "VROOM_0"
+Info: interrupt_connections_1: "vroom_system" instantiated interrupt_connections "interrupt_connections_1"
+Info: pll_0: "vroom_system" instantiated altera_pll "pll_0"
+Info: reset_controller_0: "vroom_system" instantiated altera_reset_controller "reset_controller_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "vroom_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: VROOM_0_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "VROOM_0_avalon_master_translator"
+Info: ROM_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ROM_s1_translator"
+Info: VROOM_0_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "VROOM_0_avalon_master_agent"
+Info: ROM_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ROM_s1_agent"
+Info: ROM_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ROM_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: VROOM_0_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "VROOM_0_avalon_master_limiter"
+Info: Reusing file /home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: ROM_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "ROM_s1_burst_adapter"
+Info: Reusing file /home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/julien/work/storey_peak/jtag_uart_example_23/qsys/vroom_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: vroom_system: Done "vroom_system" with 23 modules, 54 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

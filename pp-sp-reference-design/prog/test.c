@@ -56,7 +56,22 @@ void main_loop(uint8_t *ptr) {
 	}
 }
 
-int main() {
+void load_flash(uint8_t *ptr, char* filename) {
+	FILE* hexfile = fopen(filename, O_RDONLY);
+	uint32_t word;
+	size_t ofs = BRAM_BASE;
+	while (fread(&word, 4, 1, hexfile) == 1) {
+		ptr[ofs++] = word;
+	}
+	printf("Done loading program!\n");
+	ptr[PTR_BASE] = 0xFF;
+}
+
+int main(int argc, char **argv) {
+	if (argc != 1) {
+		printf("Please specify a hex file to load on the command line\n");
+	}
+
 	int f = open("/sys/bus/pci/devices/0000:02:00.0/resource0", O_RDWR);
 	if (f == -1 || f == 0) {
 		printf("Error opening uio0\n");
@@ -71,7 +86,7 @@ int main() {
 	printf("Waiting\n");
 	sleep(2);
 
-	main_loop(ptr);
+	load_flash(ptr, argv[1]);
 
 	munmap(ptr, MMSIZE);
 	close(f);

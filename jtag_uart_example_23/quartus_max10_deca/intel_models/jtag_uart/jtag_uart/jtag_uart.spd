@@ -6,5 +6,5 @@
    library="jtag_uart_0" />
  <file path="simulation/jtag_uart.v" type="VERILOG" />
  <topLevel name="jtag_uart" />
- <deviceFamily name="max10" />
+ <deviceFamily name="stratixv" />
 </simPackage>

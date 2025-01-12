@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2021.05.02.01:16:21"
- outputDirectory="/home/tom/projects/fpga_quick_ram_update/quartus_max10_deca_jtag_uart/intel_models/jtag_uart/jtag_uart/">
+ date="2025.01.09.18:26:29"
+ outputDirectory="/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -18,19 +18,19 @@
   <parameter
      name="AUTO_DEVICE_FAMILY"
      type="String"
-     defaultValue="MAX 10"
+     defaultValue="Stratix V"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="10M50DAF484C6GES"
+     defaultValue="5SGSMD5K1F40C1"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
-     defaultValue="6"
+     defaultValue="1_H1"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -120,37 +120,37 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="jtag_uart:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M50DAF484C6GES,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1619943381,AUTO_UNIQUE_ID=(altera_avalon_jtag_uart:20.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=256,writeIRQThreshold=8)"
+   parameterizationKey="jtag_uart:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5SGSMD5K1F40C1,AUTO_DEVICE_FAMILY=Stratix V,AUTO_DEVICE_SPEEDGRADE=1_H1,AUTO_GENERATION_ID=1736468789,AUTO_UNIQUE_ID=(altera_avalon_jtag_uart:23.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=256,writeIRQThreshold=8)"
    instancePathKey="jtag_uart"
    kind="jtag_uart"
    version="1.0"
    name="jtag_uart">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1619943381" />
-  <parameter name="AUTO_DEVICE" value="10M50DAF484C6GES" />
-  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_GENERATION_ID" value="1736468789" />
+  <parameter name="AUTO_DEVICE" value="5SGSMD5K1F40C1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
-  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1_H1" />
   <generatedFiles>
    <file
-       path="/home/tom/projects/fpga_quick_ram_update/quartus_max10_deca_jtag_uart/intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.v"
+       path="/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.v"
        type="VERILOG" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/tom/projects/fpga_quick_ram_update/quartus_max10_deca_jtag_uart/intel_models/jtag_uart/jtag_uart/synthesis/submodules/jtag_uart_jtag_uart_0.v"
+       path="/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/synthesis/submodules/jtag_uart_jtag_uart_0.v"
        type="VERILOG"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="/home/tom/projects/fpga_quick_ram_update/quartus_max10_deca_jtag_uart/intel_models/jtag_uart/jtag_uart.qsys" />
+       path="/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart.qsys" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="/home/tom/altera/20.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
+       path="/data/intelFPGA/23.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Debug" culprit="jtag_uart">queue size: 0 starting:jtag_uart "jtag_uart"</message>
@@ -169,17 +169,17 @@
    <message level="Debug" culprit="jtag_uart"><![CDATA["<b>jtag_uart</b>" reuses <b>altera_avalon_jtag_uart</b> "<b>submodules/jtag_uart_jtag_uart_0</b>"]]></message>
    <message level="Debug" culprit="jtag_uart">queue size: 0 starting:altera_avalon_jtag_uart "submodules/jtag_uart_jtag_uart_0"</message>
    <message level="Info" culprit="jtag_uart_0">Starting RTL generation for module 'jtag_uart_jtag_uart_0'</message>
-   <message level="Info" culprit="jtag_uart_0">  Generation command is [exec /home/tom/altera/20.1/quartus/linux64/perl/bin/perl -I /home/tom/altera/20.1/quartus/linux64/perl/lib -I /home/tom/altera/20.1/quartus/sopc_builder/bin/europa -I /home/tom/altera/20.1/quartus/sopc_builder/bin -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt8749_4407653190256106251.dir/0004_jtag_uart_0_gen/ --quartus_dir=/home/tom/altera/20.1/quartus --verilog --config=/tmp/alt8749_4407653190256106251.dir/0004_jtag_uart_0_gen//jtag_uart_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="jtag_uart_0">  Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen//jtag_uart_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="jtag_uart_0">Done RTL generation for module 'jtag_uart_jtag_uart_0'</message>
    <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>jtag_uart</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
   </messages>
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_avalon_jtag_uart:20.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=256,writeIRQThreshold=8"
+   parameterizationKey="altera_avalon_jtag_uart:23.1:allowMultipleConnections=false,avalonSpec=2.0,clkFreq=0,enableInteractiveInput=false,enableInteractiveOutput=false,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=NO_INTERACTIVE_WINDOWS,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=256,writeIRQThreshold=8"
    instancePathKey="jtag_uart:.:jtag_uart_0"
    kind="altera_avalon_jtag_uart"
-   version="20.1"
+   version="23.1"
    name="jtag_uart_jtag_uart_0">
   <parameter name="readBufferDepth" value="64" />
   <parameter name="clkFreq" value="0" />
@@ -199,21 +199,21 @@
   <parameter name="legacySignalAllow" value="false" />
   <generatedFiles>
    <file
-       path="/home/tom/projects/fpga_quick_ram_update/quartus_max10_deca_jtag_uart/intel_models/jtag_uart/jtag_uart/synthesis/submodules/jtag_uart_jtag_uart_0.v"
+       path="/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/synthesis/submodules/jtag_uart_jtag_uart_0.v"
        type="VERILOG"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles/>
   <sourceFiles>
    <file
-       path="/home/tom/altera/20.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
+       path="/data/intelFPGA/23.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/altera_avalon_jtag_uart_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="jtag_uart" as="jtag_uart_0" />
   <messages>
    <message level="Debug" culprit="jtag_uart">queue size: 0 starting:altera_avalon_jtag_uart "submodules/jtag_uart_jtag_uart_0"</message>
    <message level="Info" culprit="jtag_uart_0">Starting RTL generation for module 'jtag_uart_jtag_uart_0'</message>
-   <message level="Info" culprit="jtag_uart_0">  Generation command is [exec /home/tom/altera/20.1/quartus/linux64/perl/bin/perl -I /home/tom/altera/20.1/quartus/linux64/perl/lib -I /home/tom/altera/20.1/quartus/sopc_builder/bin/europa -I /home/tom/altera/20.1/quartus/sopc_builder/bin -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/tom/altera/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt8749_4407653190256106251.dir/0004_jtag_uart_0_gen/ --quartus_dir=/home/tom/altera/20.1/quartus --verilog --config=/tmp/alt8749_4407653190256106251.dir/0004_jtag_uart_0_gen//jtag_uart_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="jtag_uart_0">  Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen//jtag_uart_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="jtag_uart_0">Done RTL generation for module 'jtag_uart_jtag_uart_0'</message>
    <message level="Info" culprit="jtag_uart_0"><![CDATA["<b>jtag_uart</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart_0</b>"]]></message>
   </messages>

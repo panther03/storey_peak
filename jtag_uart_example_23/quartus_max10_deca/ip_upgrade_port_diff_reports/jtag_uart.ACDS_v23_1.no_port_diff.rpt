@@ -1,0 +1,23 @@
+IP Ports Diff Report for jtag_uart
+Thu Jan  9 18:26:30 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++-------------------------------------------------------------------------------+
+; IP Information                                                                ;
++----------------------+--------------------------------------------------------+
+; IP Variation Name    ; jtag_uart                                              ;
+; Prior Version        ; ACDS_v20.1                                             ;
+; New Version          ; ACDS_v23.1                                             ;
+; New File             ; intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.v ;
+; Has Port Differences ; No                                                     ;
++----------------------+--------------------------------------------------------+
+
+

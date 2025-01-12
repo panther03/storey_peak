@@ -1,13 +1,24 @@
-`default_nettype none
-
 `define JTAG_UART
 
 module top(
-        input  wire     clk,
-        output reg      led0,
-        output reg      led1,
-        output reg      led2
-    );
+    input  wire     clk,
+    output reg      led0,
+    output reg      led1,
+    output reg      led2,
+
+    input           CLK_PCIE1,
+    input           CLK_PCIE2,
+
+    // PCIe 1
+    input  wire          PCIE1_PERSTN,
+    input  wire [ 7:0]   PCIE1_SERIAL_RX,
+    output wire [ 7:0]   PCIE1_SERIAL_TX,
+
+    // PCIe 2
+    input  wire          PCIE2_PERSTN,
+    input  wire [ 7:0]   PCIE2_SERIAL_RX,
+    output wire [ 7:0]   PCIE2_SERIAL_TX
+);
 
     wire button = 1'b0;
     // When changing this value, checkout ./sw/Makefile for a list of 
@@ -41,11 +52,18 @@ module top(
     wire  [31:0]        dBus_rsp_data;
 
     reg   [7:0]         reset_vec = 8'hff;
+    reg                 reset_enable = 1'b0;
+    reg                 go_r = 1'b0;
     wire                reset;
+
+    wire spart_readdatavalid;
+    wire [31:0] spart_readdata;
+    wire spart_tx;
+    wire spart_rx = 1'b1;
 
     // 8 clock cycles of active-high reset.
     always @(posedge clk) begin
-        reset_vec       <= { reset_vec[6:0], 1'b0 };     
+        reset_vec       <= reset_enable ? 8'hff : { reset_vec[6:0], 1'b0 };     
     end
 
     assign reset = reset_vec[7];
@@ -121,6 +139,82 @@ module top(
         $readmemh("../sw/progmem3.hex", mem3);
     end
 
+    ////////////
+    // VROOM //
+    //////////
+    wire vroom_uart_rx;
+    wire vroom_uart_tx;
+    vroom_system u0 (
+		.clk_clk                    (clk),                    //             clk.clk
+		.reset_reset_n              (!reset & go_r),              //           reset.reset_n
+		.vroom_0_uart_rx_new_signal (vroom_uart_rx), // vroom_0_uart_rx.new_signal
+		.vroom_0_uart_tx_new_signal (vroom_uart_tx)  // vroom_0_uart_tx.new_signal
+	);
+
+//==============================================================================
+// PCIe
+
+wire [31:0] pcie_test_in;
+assign pcie_test_in[0] = 1'b0;
+assign pcie_test_in[4:1] = 4'b1000;
+assign pcie_test_in[5] = 1'b0;
+assign pcie_test_in[31:6] = 26'h2;
+
+wire pcie_cpu_npor;
+
+//==============================================================================
+// qsys
+
+    pcie_system u1 (
+		.pcie1_refclk_clk              (CLK_PCIE1),              //     pcie1_refclk.clk
+		.pcie1_npor_npor               (PCIE1_PERSTN),               //       pcie1_npor.npor
+		.pcie1_npor_pin_perst          (PCIE1_PERSTN),          //                 .pin_perst
+		.clk_125_clk                   (clk),                   //          clk_125.clk
+		.rst_125_reset_n               (!reset),               //          rst_125.reset_n
+		.pcie1_hip_ctrl_test_in        (pcie_test_in),        //   pcie1_hip_ctrl.test_in
+		.pcie1_hip_ctrl_simu_mode_pipe (), //                 .simu_mode_pipe
+		.pcie1_hip_serial_rx_in0       (PCIE1_SERIAL_RX[0]),       // pcie1_hip_serial.rx_in0
+		.pcie1_hip_serial_rx_in1       (PCIE1_SERIAL_RX[1]),       //                 .rx_in1
+		.pcie1_hip_serial_rx_in2       (PCIE1_SERIAL_RX[2]),       //                 .rx_in2
+		.pcie1_hip_serial_rx_in3       (PCIE1_SERIAL_RX[3]),       //                 .rx_in3
+		.pcie1_hip_serial_rx_in4       (PCIE1_SERIAL_RX[4]),       //                 .rx_in4
+		.pcie1_hip_serial_rx_in5       (PCIE1_SERIAL_RX[5]),       //                 .rx_in5
+		.pcie1_hip_serial_rx_in6       (PCIE1_SERIAL_RX[6]),       //                 .rx_in6
+		.pcie1_hip_serial_rx_in7       (PCIE1_SERIAL_RX[7]),       //                 .rx_in7
+		.pcie1_hip_serial_tx_out0      (PCIE1_SERIAL_TX[0]),      //                 .tx_out0
+		.pcie1_hip_serial_tx_out1      (PCIE1_SERIAL_TX[1]),      //                 .tx_out1
+		.pcie1_hip_serial_tx_out2      (PCIE1_SERIAL_TX[2]),      //                 .tx_out2
+		.pcie1_hip_serial_tx_out3      (PCIE1_SERIAL_TX[3]),      //                 .tx_out3
+		.pcie1_hip_serial_tx_out4      (PCIE1_SERIAL_TX[4]),      //                 .tx_out4
+		.pcie1_hip_serial_tx_out5      (PCIE1_SERIAL_TX[5]),      //                 .tx_out5
+		.pcie1_hip_serial_tx_out6      (PCIE1_SERIAL_TX[6]),      //                 .tx_out6
+		.pcie1_hip_serial_tx_out7      (PCIE1_SERIAL_TX[7]),      //                 .tx_out7
+        .pcie2_refclk_clk              (CLK_PCIE2),              //     pcie2_refclk.clk
+		.pcie2_npor_npor               (PCIE2_PERSTN),               //       pcie2_npor.npor
+		.pcie2_npor_pin_perst          (PCIE2_PERSTN),          //                 .pin_perst
+		.pcie2_hip_ctrl_test_in        (pcie_test_in),        //   pcie2_hip_ctrl.test_in
+		.pcie2_hip_ctrl_simu_mode_pipe (), //                 .simu_mode_pipe
+		.pcie2_hip_serial_rx_in0       (PCIE2_SERIAL_RX[0]),       // pcie2_hip_serial.rx_in0
+		.pcie2_hip_serial_rx_in1       (PCIE2_SERIAL_RX[1]),       //                 .rx_in1
+		.pcie2_hip_serial_rx_in2       (PCIE2_SERIAL_RX[2]),       //                 .rx_in2
+		.pcie2_hip_serial_rx_in3       (PCIE2_SERIAL_RX[3]),       //                 .rx_in3
+		.pcie2_hip_serial_rx_in4       (PCIE2_SERIAL_RX[4]),       //                 .rx_in4
+		.pcie2_hip_serial_rx_in5       (PCIE2_SERIAL_RX[5]),       //                 .rx_in5
+		.pcie2_hip_serial_rx_in6       (PCIE2_SERIAL_RX[6]),       //                 .rx_in6
+		.pcie2_hip_serial_rx_in7       (PCIE2_SERIAL_RX[7]),       //                 .rx_in7
+		.pcie2_hip_serial_tx_out0      (PCIE2_SERIAL_TX[0]),      //                 .tx_out0
+		.pcie2_hip_serial_tx_out1      (PCIE2_SERIAL_TX[1]),      //                 .tx_out1
+		.pcie2_hip_serial_tx_out2      (PCIE2_SERIAL_TX[2]),      //                 .tx_out2
+		.pcie2_hip_serial_tx_out3      (PCIE2_SERIAL_TX[3]),      //                 .tx_out3
+		.pcie2_hip_serial_tx_out4      (PCIE2_SERIAL_TX[4]),      //                 .tx_out4
+		.pcie2_hip_serial_tx_out5      (PCIE2_SERIAL_TX[5]),      //                 .tx_out5
+		.pcie2_hip_serial_tx_out6      (PCIE2_SERIAL_TX[6]),      //                 .tx_out6
+		.pcie2_hip_serial_tx_out7      (PCIE2_SERIAL_TX[7]),      //                 .tx_out7
+		.uart_conduit_rxd              (vroom_uart_tx),              //     uart_conduit.rxd
+		.uart_conduit_txd              (vroom_uart_rx)               //                 .txd
+	);
+
+
     //============================================================
     // CPU memory instruction read port
     //============================================================
@@ -191,6 +285,7 @@ module top(
             led1            <= 1'b1;
             led2            <= 1'b1;
             periph_rdata    <= 32'd0;
+            reset_enable <= 1'b0;
         end
         else if (periph_sel) begin
 
@@ -234,6 +329,11 @@ module top(
         end
     end
 
+    always @(posedge clk) begin
+        // System reset register
+        go_r <= (periph_sel && (dBus_cmd_payload_address[periph_addr_bits-1:2] == (12'h008 >> 2))) ? 1'b1 : go_r;
+    end
+
     reg periph_rd_done;
     always @(posedge clk or posedge reset) begin
         if (reset) begin
@@ -271,10 +371,11 @@ module top(
         end
     end
 
-    assign dBus_rsp_ready  = mem_rd_done || periph_rd_done || jtag_uart_rd_done;
+    assign dBus_rsp_ready  = mem_rd_done || periph_rd_done || jtag_uart_rd_done || spart_readdatavalid;
 
     assign dBus_rsp_data = periph_rd_done    ? periph_rdata : 
                            jtag_uart_rd_done ? jtag_uart_rdata :
+                           spart_readdatavalid ? spart_readdata :
                                                mem_rdata;
 
     //============================================================
@@ -332,6 +433,28 @@ module top(
         jtag_uart_rdata   = 32'd0;
     end
 `endif
+
+    //============================================================
+    // SPART
+    //============================================================
+    spart iSPART (
+        .clk(clk),
+        .rst_n(!reset),
+        .s_waitrequest(), // unused
+        .s_readdata(spart_readdata),
+        .s_readdatavalid(spart_readdatavalid),
+        .s_response(), // unused
+        .s_writeresponsevalid(), // unused
+        .bus_burstcount(5'h0),
+        .bus_writedata(dBus_cmd_payload_data),
+        .bus_address(dBus_cmd_payload_address[31:2]),
+        .bus_write(dBus_cmd_payload_wr),
+        .bus_read(!dBus_cmd_payload_wr),
+        .bus_byteenable(4'hF),
+        .TX(),
+        .RX(vroom_uart_tx),
+        .all_done()
+    );
 
 endmodule
 

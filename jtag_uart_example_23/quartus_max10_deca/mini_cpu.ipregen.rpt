@@ -1,0 +1,142 @@
+IP Upgrade report for mini_cpu
+Thu Jan  9 18:26:30 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                                ;
++------------------------------+----------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Thu Jan  9 18:26:30 2025                  ;
+; Quartus Prime Version        ; 23.1std.1 Build 993 05/14/2024 SC Standard Edition ;
+; Revision Name                ; mini_cpu                                           ;
+; Top-level Entity Name        ; top                                                ;
+; Family                       ; Stratix V                                          ;
++------------------------------+----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                                                                            ;
++-------------+----------------+---------+----------------------------------------------------------+---------------------------------------+----------------------------------------------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File                                     ; Generation File Path                  ; New Source File                                          ; Message ;
++-------------+----------------+---------+----------------------------------------------------------+---------------------------------------+----------------------------------------------------------+---------+
+; jtag_uart   ; Qsys           ; 20.1    ; intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.qip ; intel_models/jtag_uart/jtag_uart.qsys ; intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.qip ;         ;
++-------------+----------------+---------+----------------------------------------------------------+---------------------------------------+----------------------------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "intel_models/jtag_uart/jtag_uart.qsys" to "intel_models/jtag_uart/jtag_uart.BAK.qsys"
+Info (11902): Backing up file "intel_models/jtag_uart/jtag_uart/synthesis/jtag_uart.v" to "intel_models/jtag_uart/jtag_uart.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "intel_models/jtag_uart/jtag_uart.qsys"
+Info: 2025.01.09.18:26:21 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2025.01.09.18:26:21 Info: Finished upgrading the ip cores
+Info: 2025.01.09.18:26:27 Info: Saving generation log to /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart
+Info: 2025.01.09.18:26:27 Info: Starting: Create simulation model
+Info: 2025.01.09.18:26:27 Info: Loading jtag_uart
+Info: 2025.01.09.18:26:27 Info: Reading input file
+Info: 2025.01.09.18:26:27 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Info: 2025.01.09.18:26:27 Info: Parameterizing module jtag_uart_0
+Info: 2025.01.09.18:26:27 Info: Building connections
+Info: 2025.01.09.18:26:27 Info: Parameterizing connections
+Info: 2025.01.09.18:26:27 Info: Validating
+Info: 2025.01.09.18:26:27 Info: Done reading input file
+Warning: 2025.01.09.18:26:27 Warning: jtag_uart.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.01.09.18:26:27 Info: jtag_uart: Generating jtag_uart "jtag_uart" for SIM_VERILOG
+Info: 2025.01.09.18:26:27 Info: jtag_uart_0: Starting RTL generation for module 'jtag_uart_jtag_uart_0'
+Info: 2025.01.09.18:26:27 Info: jtag_uart_0:   Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt0098_7492287353274400408.dir/0002_jtag_uart_0_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0098_7492287353274400408.dir/0002_jtag_uart_0_gen//jtag_uart_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0098_7492287353274400408.dir/0002_jtag_uart_0_gen
+Info: 2025.01.09.18:26:27 Info: jtag_uart_0: Done RTL generation for module 'jtag_uart_jtag_uart_0'
+Info: 2025.01.09.18:26:27 Info: jtag_uart_0: "jtag_uart" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: 2025.01.09.18:26:27 Info: jtag_uart: Done "jtag_uart" with 2 modules, 2 files
+Info: 2025.01.09.18:26:27 Info: qsys-generate succeeded.
+Info: 2025.01.09.18:26:27 Info: Finished: Create simulation model
+Info: 2025.01.09.18:26:27 Info: Starting: Create Modelsim Project.
+Info: 2025.01.09.18:26:27 Info: sim-script-gen --spd=/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/jtag_uart.spd --output-directory=/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:27 Info: Doing: ip-make-simscript --spd=/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/jtag_uart.spd --output-directory=/home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info: Generating the following file(s) for RIVIERA simulator in /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info:     aldec
+Info: 2025.01.09.18:26:28 Info: Generating the following file(s) for VCSMX simulator in /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info:     synopsys/vcsmx
+Info: 2025.01.09.18:26:28 Info:     synopsys/vcsmx
+Info: 2025.01.09.18:26:28 Info: Generating the following file(s) for MODELSIM simulator in /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info:     mentor
+Info: 2025.01.09.18:26:28 Info: Generating the following file(s) for XCELIUM simulator in /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info:     xcelium
+Info: 2025.01.09.18:26:28 Info:     xcelium
+Info: 2025.01.09.18:26:28 Info:     xcelium
+Info: 2025.01.09.18:26:28 Info:     1 .cds.lib files in xcelium/cds_libs
+Info: 2025.01.09.18:26:28 Info: Generating the following file(s) for VCS simulator in /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info:     synopsys/vcs
+Info: 2025.01.09.18:26:28 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/julien/work/storey_peak/jtag_uart_example_23/quartus_max10_deca/intel_models/jtag_uart/jtag_uart/simulation
+Info: 2025.01.09.18:26:28 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2025.01.09.18:26:28 Info: Finished: Create Modelsim Project.
+Info: 2025.01.09.18:26:28 Info: Starting: Create block symbol file (.bsf)
+Info: 2025.01.09.18:26:28 Info: Loading jtag_uart
+Info: 2025.01.09.18:26:28 Info: Reading input file
+Info: 2025.01.09.18:26:28 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Info: 2025.01.09.18:26:28 Info: Parameterizing module jtag_uart_0
+Info: 2025.01.09.18:26:28 Info: Building connections
+Info: 2025.01.09.18:26:28 Info: Parameterizing connections
+Info: 2025.01.09.18:26:28 Info: Validating
+Info: 2025.01.09.18:26:28 Info: Done reading input file
+Warning: 2025.01.09.18:26:28 Warning: jtag_uart.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.01.09.18:26:29 Info: qsys-generate succeeded.
+Info: 2025.01.09.18:26:29 Info: Finished: Create block symbol file (.bsf)
+Info: 2025.01.09.18:26:29 Info:
+Info: 2025.01.09.18:26:29 Info: Starting: Create HDL design files for synthesis
+Info: 2025.01.09.18:26:29 Info: Loading jtag_uart
+Info: 2025.01.09.18:26:29 Info: Reading input file
+Info: 2025.01.09.18:26:29 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Info: 2025.01.09.18:26:29 Info: Parameterizing module jtag_uart_0
+Info: 2025.01.09.18:26:29 Info: Building connections
+Info: 2025.01.09.18:26:29 Info: Parameterizing connections
+Info: 2025.01.09.18:26:29 Info: Validating
+Info: 2025.01.09.18:26:29 Info: Done reading input file
+Warning: 2025.01.09.18:26:29 Warning: jtag_uart.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.01.09.18:26:29 Info: jtag_uart: Generating jtag_uart "jtag_uart" for QUARTUS_SYNTH
+Info: 2025.01.09.18:26:29 Info: jtag_uart_0: Starting RTL generation for module 'jtag_uart_jtag_uart_0'
+Info: 2025.01.09.18:26:29 Info: jtag_uart_0:   Generation command is [exec /data/intelFPGA/23.1/quartus/linux64/perl/bin/perl -I /data/intelFPGA/23.1/quartus/linux64/perl/lib -I /data/intelFPGA/23.1/quartus/sopc_builder/bin/europa -I /data/intelFPGA/23.1/quartus/sopc_builder/bin -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/common -I /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /data/intelFPGA/23.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=jtag_uart_jtag_uart_0 --dir=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen/ --quartus_dir=/data/intelFPGA/23.1/quartus --verilog --config=/tmp/alt0098_7492287353274400408.dir/0004_jtag_uart_0_gen/
+Info: 2025.01.09.18:26:29 Info: jtag_uart_0: Done RTL generation for module 'jtag_uart_jtag_uart_0'
+Info: 2025.01.09.18:26:29 Info: jtag_uart_0: "jtag_uart" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: 2025.01.09.18:26:29 Info: jtag_uart: Done "jtag_uart" with 2 modules, 2 files
+Info: 2025.01.09.18:26:29 Info: qsys-generate succeeded.
+Info: 2025.01.09.18:26:29 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component Qsys with file "intel_models/jtag_uart/jtag_uart.qsys"
+Info (23030): Evaluation of Tcl script /data/intelFPGA/23.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 735 megabytes
+    Info: Processing ended: Thu Jan  9 18:26:30 2025
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:01:34
+
+

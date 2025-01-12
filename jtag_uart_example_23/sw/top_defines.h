@@ -27,6 +27,11 @@
 #define STATUS_JTAG_UART_FIELD_LENGTH                   1
 
 //============================================================
+// RESET
+//============================================================
+static volatile uint32_t* RESET_ADDR = (volatile uint32_t*)0x80000008;
+
+//============================================================
 // JTAG_UART
 //============================================================
 
@@ -57,6 +62,13 @@
 
 #define JTAG_UART_CONTROL_WSPACE_FIELD_START                    16
 #define JTAG_UART_CONTROL_WSPACE_FIELD_LENGTH                   16
+
+//============================================================
+// SPART
+//============================================================
+
+static volatile uint32_t* SPART_CMD_ADDR = (volatile uint32_t*)0xF8000040;
+static volatile uint32_t* SPART_DATA_ADDR = (volatile uint32_t*)0xF8000044;
 
 #endif
 

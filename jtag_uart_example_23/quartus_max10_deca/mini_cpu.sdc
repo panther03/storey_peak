@@ -104,3 +104,4 @@ set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}]
 # Set Input Transition
 #**************************************************************
 
+derive_pll_clocks

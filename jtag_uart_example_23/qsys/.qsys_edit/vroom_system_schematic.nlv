@@ -1,0 +1,22 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst vroom_system.VROOM_0 -pg 1 -lvl 4 -y 110
+preplace inst vroom_system.interrupt_connections_1 -pg 1 -lvl 5 -y 190
+preplace inst vroom_system.ROM -pg 1 -lvl 5 -y 110
+preplace inst vroom_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst vroom_system.RAM -pg 1 -lvl 5 -y 30
+preplace inst vroom_system.reset_controller_0 -pg 1 -lvl 3 -y 40
+preplace inst vroom_system.clk_0 -pg 1 -lvl 1 -y 110
+preplace inst vroom_system.pll_0 -pg 1 -lvl 2 -y 110
+preplace netloc EXPORT<net_container>vroom_system</net_container>(SLAVE)VROOM_0.uart_rx,(SLAVE)vroom_system.vroom_0_uart_rx) 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>vroom_system</net_container>(SLAVE)RAM.s1,(MASTER)VROOM_0.avalon_master,(SLAVE)ROM.s1) 1 4 1 1120
+preplace netloc EXPORT<net_container>vroom_system</net_container>(SLAVE)vroom_system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>vroom_system</net_container>(SLAVE)reset_controller_0.clk,(SLAVE)VROOM_0.clock,(SLAVE)interrupt_connections_1.clock,(SLAVE)RAM.clk1,(SLAVE)ROM.clk1,(MASTER)pll_0.outclk0) 1 2 3 520 120 860 40 1160
+preplace netloc EXPORT<net_container>vroom_system</net_container>(SLAVE)vroom_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>vroom_system</net_container>(SLAVE)reset_controller_0.reset_in0,(MASTER)clk_0.clk_reset,(SLAVE)pll_0.reset) 1 1 2 320 70 NJ
+preplace netloc POINT_TO_POINT<net_container>vroom_system</net_container>(MASTER)clk_0.clk,(SLAVE)pll_0.refclk) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>vroom_system</net_container>(SLAVE)interrupt_connections_1.signals,(SLAVE)VROOM_0.interrupts) 1 3 2 880 100 NJ
+preplace netloc EXPORT<net_container>vroom_system</net_container>(SLAVE)vroom_system.vroom_0_uart_tx,(SLAVE)VROOM_0.uart_tx) 1 0 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc FAN_OUT<net_container>vroom_system</net_container>(MASTER)reset_controller_0.reset_out,(SLAVE)ROM.reset1,(SLAVE)VROOM_0.reset_sink,(SLAVE)RAM.reset1) 1 3 2 840 60 1140
+levelinfo -pg 1 0 110 1370
+levelinfo -hier vroom_system 120 150 390 710 910 1230 1360
